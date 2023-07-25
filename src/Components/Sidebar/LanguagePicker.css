@@ -1,0 +1,17 @@
+.mainSelectorDiv {
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  
+}
+
+.selectedLanguage {
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.notSelectedLanguage {
+  font-size: 1rem;
+}

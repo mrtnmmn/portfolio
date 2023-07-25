@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.css'
 
-import { useTranslation } from 'react-i18next'
+import LanguagePicker from './LanguagePicker';
 
 const SidebarContainer = styled.div`
   width: ${({ isExpanded }) => (isExpanded ? '300px' : '100px')};
@@ -43,14 +43,6 @@ const CloseButtonContainer = styled.div`
 
 const Sidebar = () => {
 
-  const { i18n } = useTranslation();
-
-  const changeLanguage = (event) => {
-    const selectedLanguage = event.target.value;
-    i18n.changeLanguage(selectedLanguage);
-  };
-
-
   const [isExpanded, setIsExpanded] = useState(true);
 
   const handleResizeClick = () => {
@@ -72,6 +64,8 @@ const Sidebar = () => {
         </ExpandButtonContainer>  
       </div>
       }
+
+      <LanguagePicker />
     </SidebarContainer>
   );
 };
