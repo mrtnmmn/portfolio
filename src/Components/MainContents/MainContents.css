@@ -8,8 +8,16 @@
   width: 100%;
   overflow: scroll;
   position: relative;
+  padding: 0px;
 }
 
 .headerImage {
   width: 100%;
+}
+
+.name {
+  background-image: url("../../resources/IMG_1568.JPG");
+  font-size: 5rem;
+  height: 1000px;
+  min-width: 100%;
 }
