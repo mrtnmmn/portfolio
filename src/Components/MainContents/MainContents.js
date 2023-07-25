@@ -1,5 +1,6 @@
 import './MainContents.css'
 import { useTranslation } from 'react-i18next';
+import Footbar from './Footbar/Footbar';
 
 function MainContents() {
 
@@ -23,6 +24,8 @@ function MainContents() {
       <p className='description'>
         {t('descriptionParagraph2')}
       </p>
+
+      <Footbar />
     </div>
   );
 }

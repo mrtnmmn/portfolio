@@ -1,0 +1,12 @@
+.mainFootbarDiv {
+  min-width: 100%;
+  height: 5rem;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(109, 109, 109);
+  font-size: 1rem;
+  font-family: atWriter;
+}
