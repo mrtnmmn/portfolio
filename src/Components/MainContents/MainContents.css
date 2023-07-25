@@ -9,15 +9,37 @@
   position: relative;
   padding: 0px;
   max-width: 100%;
+  background-color: rgb(54, 54, 54);
 }
 
 .headerImage {
   width: 100%;
 }
 
-.name {
-  background-image: url("../../resources/IMG_1568.JPG");
-  font-size: 5rem;
-  height: 1000px;
+.titleDiv {
+  background-image: url("../../resources/photos/IMG_1568.JPG");
+  height: 100vh;
   min-width: 100%;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px -30px 68px 8px rgb(63, 63, 63);
+}
+
+.name {
+  font-size: 5rem;
+  font-family: Title;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-family: Title;
+}
+
+.description {
+  padding: 15rem;
+  font-family: atWritter;
 }
