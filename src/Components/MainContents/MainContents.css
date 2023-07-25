@@ -40,6 +40,14 @@
 }
 
 .description {
-  padding: 15rem;
-  font-family: atWritter;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-family: atWriter;
+}
+
+.sectionTitle {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 15rem;
+  font-family: momTypewriter;
 }

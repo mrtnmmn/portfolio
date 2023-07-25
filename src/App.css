@@ -21,6 +21,16 @@
 }
 
 @font-face {
-  font-family: "atWritter";
+  font-family: "atWriter";
   src: url("./resources/fonts/atwriter.ttf");
+}
+
+@font-face {
+  font-family: "momTypewriter";
+  src: url("./resources/fonts/MomTypewriter.ttf");
+}
+
+@font-face {
+  font-family: "jmhTypewriter";
+  src: url("./resources/fonts/JMH\ Typewriter.ttf");
 }
