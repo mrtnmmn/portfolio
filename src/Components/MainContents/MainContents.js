@@ -4,15 +4,6 @@ function MainContents() {
   return (  
     <div className="mainDiv">
       <img src={headerPicture} className='headerImage' />
-      a
-      <img src={headerPicture} className='headerImage' />
-
-      <img src={headerPicture} className='headerImage' />
-
-      <img src={headerPicture} className='headerImage' />
-
-      <img src={headerPicture} className='headerImage' />
-
     </div>
   );
 }
