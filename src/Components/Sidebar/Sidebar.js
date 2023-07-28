@@ -5,6 +5,7 @@ import { faBars, faX } from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.css'
 
 import LanguagePicker from './LanguagePicker';
+import { SidebarToggle } from './SidebarToggle/SidebarToggle';
 
 const SidebarContainer = styled.div`
   width: ${({ isExpanded }) => (isExpanded ? '300px' : '100px')};
@@ -51,7 +52,7 @@ const Sidebar = () => {
 
   return (
     <SidebarContainer isExpanded={isExpanded}>
-      {/* Sidebar content */}
+      <SidebarToggle /> 
       {isExpanded ? 
       <div>
         <CloseButtonContainer onClick={handleResizeClick} isExpanded={isExpanded}>
@@ -64,7 +65,6 @@ const Sidebar = () => {
         </ExpandButtonContainer>  
       </div>
       }
-
       <LanguagePicker />
     </SidebarContainer>
   );

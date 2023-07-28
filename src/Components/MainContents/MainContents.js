@@ -1,10 +1,24 @@
 import './MainContents.css'
 import { useTranslation } from 'react-i18next';
+import { motion, useCycle } from 'framer-motion';
+import { useState } from 'react'
+
 import Footbar from './Footbar/Footbar';
+import { SidebarToggle } from '../Sidebar/SidebarToggle/SidebarToggle';
+import StarRating from './StarRating/StarRating';
 
 function MainContents() {
 
+  const variants = {
+    open: { opacity: 1, x: 0 },
+    closed: { opacity: 0, x: "-100%" },
+  }
+
+  const [isOpen, toggleOpen] = useCycle(false, true);
+
   const { t } = useTranslation()
+
+  const [isasdOpen, setIsOpen] = useState(false)
 
   return (  
     <div className="mainDiv">
@@ -25,6 +39,9 @@ function MainContents() {
         {t('descriptionParagraph2')}
       </p>
 
+      <StarRating rating={3.5} label={'pito'} /> 
+
+      <SidebarToggle toggle={() => toggleOpen()} />
       <Footbar />
     </div>
   );
