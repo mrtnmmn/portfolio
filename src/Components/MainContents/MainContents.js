@@ -38,10 +38,7 @@ function MainContents() {
       <p className='description'>
         {t('descriptionParagraph2')}
       </p>
-
-      <StarRating rating={3.5} label={'pito'} /> 
-
-      <SidebarToggle toggle={() => toggleOpen()} />
+      <StarRating rating={4.5} label={'React'} /> 
       <Footbar />
     </div>
   );

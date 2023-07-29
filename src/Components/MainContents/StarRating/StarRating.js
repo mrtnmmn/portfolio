@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalfStroke } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 
+import './StarRating.css'
+
 function StarRating(props) {
 
   const [stars, setStars] = useState([])
@@ -30,7 +32,7 @@ function StarRating(props) {
 
   return (  
     <div>
-      <span>{props.label}</span>
+      <span className="label">{props.label}:</span>
       {stars.map((item) => (item))}
     </div>
   );
