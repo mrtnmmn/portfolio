@@ -6,6 +6,7 @@ import { useState } from 'react'
 import Footbar from './Footbar/Footbar';
 import { SidebarToggle } from '../Sidebar/SidebarToggle/SidebarToggle';
 import StarRating from './StarRating/StarRating';
+import SkillsShowcase from './SkillsShowcase/SkillsShowcase';
 
 function MainContents() {
 
@@ -39,6 +40,7 @@ function MainContents() {
         {t('descriptionParagraph2')}
       </p>
       <StarRating rating={4.5} label={'React'} /> 
+      <SkillsShowcase /> 
       <Footbar />
     </div>
   );
