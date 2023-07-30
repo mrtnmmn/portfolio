@@ -39,7 +39,10 @@ function MainContents() {
       <p className='description'>
         {t('descriptionParagraph2')}
       </p>
-      <StarRating rating={4.5} label={'React'} /> 
+
+      <div className='sectionTitle'>
+        Capabilities: 
+      </div>
       <SkillsShowcase /> 
       <Footbar />
     </div>
