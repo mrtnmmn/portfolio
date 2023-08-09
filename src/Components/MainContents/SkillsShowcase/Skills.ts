@@ -3,18 +3,23 @@ export interface Skill {
   rating: number
 }
 
-export const frontendSkills = {
-  name: "Frontend",
+export const languageSkills = {
+  name: "Languages",
   techs: [
-  { label: "React", rating: 4.5 },
-  { label: "Angular", rating: 3 }]
+  { label: "Java", rating: 4.5 },
+  { label: "Python", rating: 3 },
+  { label: "JavaScript", rating: 4 },
+  { label: "HTML", rating: 4},
+  { label: "CSS", rating: 4}]
 }
 
-export const backendSkills = {
-  name: "Backend",
+export const frameworkSkills = {
+  name: "Frameworks",
   techs: [
-  { label: "Springboot", rating: 4.5 },
-  { label: "Node.js", rating: 2.5 }]
+  { label: "Angular", rating: 2.5},
+  { label: "Node.js", rating: 2.5 },
+  { label: "React", rating: 4.5},
+  { label: "Springboot", rating: 4.5 }]
 }
 
 export const databaseSkills = {
@@ -31,4 +36,4 @@ export const softSkills = {
   { label: "Critical Thinking", rating: 4 }]
 }
 
-export const skillsType = [frontendSkills, backendSkills, databaseSkills, softSkills]
+export const skillsType = [languageSkills, frameworkSkills, databaseSkills, softSkills]
