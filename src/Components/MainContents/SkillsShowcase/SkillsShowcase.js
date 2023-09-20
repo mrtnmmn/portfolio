@@ -1,6 +1,5 @@
 import "./SkillsShowcase.css";
 import { useState } from "react";
-import { initialTabs as tabs } from "./Ingredients.ts";
 import { motion, AnimatePresence } from "framer-motion";
 import StarRating from "../StarRating/StarRating";
 
